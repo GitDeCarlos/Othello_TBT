@@ -150,7 +150,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6309932111548478570d67e04ac967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonPre: {fileID: 0}
+  buttonPre: {fileID: 6246001207099255124, guid: 6b03a4801cd1f0540a2f3b19b0c54742,
+    type: 3}
+  board: {fileID: 7899309449873223507, guid: 7fcbbcf763031c94fa74de2681556e67, type: 3}
+  p1_tile: {fileID: 2032366612267681701, guid: e3aefac3dd1534b48b7a43cde727d493, type: 3}
+  p2_tile: {fileID: 413289167273399396, guid: 440fd525525d3c242899c154f64291f5, type: 3}
 --- !u!4 &845883548
 Transform:
   m_ObjectHideFlags: 0
@@ -242,7 +246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110559916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 5, y: 5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
