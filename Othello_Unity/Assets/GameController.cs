@@ -9,18 +9,8 @@ public class GameController : MonoBehaviour
     public GameObject p2_tile;
 
     // Start is called before the first frame update
-    void Start(){
+    void Start() {
         //Board is in [y,x] format
-        public GameObject[,] board;
-        board = new GameObject[8,8];
-        for(int y = 0; y < 8; y++){
-            for(int x = 0; x < 8; x++){
-                board[y,x] = buttonPre;
-                pos = 
-                Instatiate(board[y,x], new Vector3())
-
-            }
-        }
         
     }
 
