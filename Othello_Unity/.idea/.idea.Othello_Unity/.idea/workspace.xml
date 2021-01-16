@@ -13,6 +13,7 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/MainMenu.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mzuSmfLc9ci6bVGJ7DcxraulMr" />
@@ -22,6 +23,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -56,6 +58,9 @@
       <option name="presentableId" value="Default" />
       <updated>1610508744857</updated>
       <workItem from="1610508750427" duration="132000" />
+      <workItem from="1610766737415" duration="59000" />
+      <workItem from="1610767045608" duration="1000" />
+      <workItem from="1610767112188" duration="76000" />
     </task>
     <servers />
   </component>
@@ -63,7 +68,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -74,6 +79,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
