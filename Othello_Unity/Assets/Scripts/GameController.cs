@@ -76,9 +76,11 @@ public class GameController : MonoBehaviour
         GameObject newTile;
         newTile = tileOnTurn();
 
-        if(curr != null){
+        if(curr.tag != "Tile"){
             GameObject temp = place(curr);
-            return curr;
+            return temp;
         }
+        Debug.Log("Oopsie");
+        return null;
     }
 }
