@@ -15,6 +15,9 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start(){
 
+        // Create prefab from textures
+        
+        /*
         //Board is in [y,x] format
         Instantiate(board, new Vector3(5,5,0), Quaternion.identity);
         
@@ -38,7 +41,7 @@ public class GameController : MonoBehaviour
         Destroy(gameboard[4,3]);
         gameboard[4,3] = Instantiate(p2_tile, new Vector3(5.5f, 4.4f, -0.5f), Quaternion.identity);
 
-        gameboard[2,2] = flip(gameboard[2,2]);
+        gameboard[2,2] = flip(gameboard[2,2]);*/
     }
 
     // Update is called once per frame

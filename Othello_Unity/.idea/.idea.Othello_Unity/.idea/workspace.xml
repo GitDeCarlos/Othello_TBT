@@ -14,6 +14,8 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/GameController.cs" />
       <option value="$PROJECT_DIR$/Assets/MainMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/TextureController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mzuSmfLc9ci6bVGJ7DcxraulMr" />
@@ -62,6 +64,8 @@
       <workItem from="1610767045608" duration="1000" />
       <workItem from="1610767112188" duration="76000" />
       <workItem from="1610768174350" duration="1000" />
+      <workItem from="1610771336983" duration="26000" />
+      <workItem from="1610771410901" duration="2176000" />
     </task>
     <servers />
   </component>
