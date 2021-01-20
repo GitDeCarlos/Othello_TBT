@@ -11,6 +11,7 @@
           <e p="GameController.cs" t="Include" />
           <e p="TileFunctionality.cs" t="Include" />
         </e>
+        <e p="SettingsController.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />

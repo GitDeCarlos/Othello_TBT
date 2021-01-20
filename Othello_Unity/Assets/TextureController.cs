@@ -15,7 +15,12 @@ public class TextureController : MonoBehaviour
     
     private void Start()
     {
-        string FilePath = "Assets/TexturePacks/" + TexturePack+ "/bg.png";
+        GameObject settingsController = GameObject.Find("SettingsController");
+        SettingsController settings = settingsController.GetComponent<SettingsController>();
+        
+        TexturePack = settings.GetCurrentTexture();
+        
+        string FilePath = "Assets/TexturePacks/" + TexturePack + "/bg.png";
         test = Resources.Load<Sprite>(FilePath);
 
         board_bg.GetComponent<Image>().sprite = LoadNewSprite(FilePath);
