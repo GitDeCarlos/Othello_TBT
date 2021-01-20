@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04ee6bc373e91040b27b619844f2fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TexturePack: SimpleWood
+  TexturePack: SummertimeLawn
   test2: {fileID: 21300000, guid: 94cd1f96fa379d24894daa93569328d5, type: 3}
   board_bg: {fileID: 1770425177}
 --- !u!4 &1072746516

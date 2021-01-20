@@ -13,8 +13,8 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/GameController.cs" />
-      <option value="$PROJECT_DIR$/Assets/MainMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/MainMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/TextureController.cs" />
     </changedPaths>
   </component>
@@ -66,6 +66,8 @@
       <workItem from="1610768174350" duration="1000" />
       <workItem from="1610771336983" duration="26000" />
       <workItem from="1610771410901" duration="2176000" />
+      <workItem from="1611109199093" duration="713000" />
+      <workItem from="1611109939587" duration="2088000" />
     </task>
     <servers />
   </component>
