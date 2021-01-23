@@ -75,7 +75,7 @@ public class GameController : MonoBehaviour
         if (PlayerChanged)
         {
             PlayerChanged = false;
-            GetCurrentAgent().RequestDecision();
+           // GetCurrentAgent().RequestDecision();
         }
     }
 
