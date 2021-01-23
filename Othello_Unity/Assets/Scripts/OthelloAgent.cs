@@ -33,7 +33,7 @@ public class OthelloAgent : Agent
             actionsOut[0] = randomField;
         }
     }
-
+/*
     public override void CollectObservations(VectorSensor sensor)
     {
         foreach (var field in board.Fields)
@@ -51,4 +51,5 @@ public class OthelloAgent : Agent
     {
         actionMasker.SetMask(0, board.GetOccupiedFields());
     }
+    */
 }
