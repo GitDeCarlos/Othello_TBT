@@ -18,6 +18,7 @@
       <option value="$PROJECT_DIR$/Assets/SettingsController.cs" />
       <option value="$PROJECT_DIR$/Assets/MainMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OptionsMenu.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mzuSmfLc9ci6bVGJ7DcxraulMr" />
@@ -72,6 +73,7 @@
       <workItem from="1611109939587" duration="5426000" />
       <workItem from="1611368478133" duration="1497000" />
       <workItem from="1611371388544" duration="44000" />
+      <workItem from="1611372858477" duration="55000" />
     </task>
     <servers />
   </component>

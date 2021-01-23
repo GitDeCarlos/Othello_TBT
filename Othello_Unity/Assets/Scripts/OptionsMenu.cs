@@ -7,13 +7,12 @@ using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
-    public Text TextBox;
-    private SettingsController settings;
+    private SettingsController _settings;
     
     void Start()
     {
         // Get settings script for changes
-        settings = GameObject.Find("SettingsController").GetComponent<SettingsController>();
+        _settings = GameObject.Find("SettingsController").GetComponent<SettingsController>();
         
         // Get the dropdown component
         var dropdown = GameObject.Find("Dropdown").GetComponent<TMP_Dropdown>();
@@ -27,12 +26,6 @@ public class OptionsMenu : MonoBehaviour
             dropdown.options.Add(new TMP_Dropdown.OptionData() {text = dir[i].Substring(20)});
         }
 
-        dropdown.onValueChanged.AddListener(delegate { settings.SetCurrentTexture(dropdown.options[dropdown.value].text); });
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        dropdown.onValueChanged.AddListener(delegate { _settings.SetCurrentTexture(dropdown.options[dropdown.value].text); });
     }
 }
