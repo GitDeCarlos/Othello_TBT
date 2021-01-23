@@ -20,6 +20,10 @@ public class MainMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
-        Debug.Log("Working");
+    }
+
+    public void QuitGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }

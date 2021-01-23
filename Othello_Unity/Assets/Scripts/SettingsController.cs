@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,13 +14,13 @@ public class SettingsController : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(transform.gameObject);
+
     }
 
-    public void SetCurrentTexture()
+    public void SetCurrentTexture(string text)
     {
-        //TMP_Dropdown dropDown = GameObject.Find("TextureDropDown").GetComponent<TMP_Dropdown>();
-        //_currentTexture = dropDown.options[dropDown.value].text;
-        
+        _currentTexture = text;
+
     }
     
     public string GetCurrentTexture()
