@@ -10,9 +10,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/OptionsMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SettingsController.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/TextureController.cs" />
+      <option value="$PROJECT_DIR$/Assets/OptionsMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/SettingsController.cs" />
       <option value="$PROJECT_DIR$/Assets/MainMenu.cs" />
     </changedPaths>
   </component>
@@ -62,6 +70,11 @@
       <workItem from="1610767045608" duration="1000" />
       <workItem from="1610767112188" duration="76000" />
       <workItem from="1610768174350" duration="1000" />
+      <workItem from="1610771336983" duration="26000" />
+      <workItem from="1610771410901" duration="2176000" />
+      <workItem from="1611109199093" duration="713000" />
+      <workItem from="1611109939587" duration="5426000" />
+      <workItem from="1611368478133" duration="1497000" />
     </task>
     <servers />
   </component>

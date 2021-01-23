@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     public GameObject p1_tile;
     public GameObject p2_tile;
     public GameObject[,] gameboard = new GameObject[8,8];
-    
+
     int turn = 0;
     public List<int> availableFields = new List<int>(64);
 
@@ -28,9 +28,12 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start(){
 
+        // Create prefab from textures
+
+        /*
         //Board is in [y,x] format
         Instantiate(board, new Vector3(5,5,0), Quaternion.identity);
-        
+
         PlayerChanged = true;
 
         Instantiate(board, new Vector3(5,5,0), Quaternion.identity);
@@ -48,7 +51,7 @@ public class GameController : MonoBehaviour
         }
 
 
-        //Placing the starting 4 pieces 
+        //Placing the starting 4 pieces
         Destroy(gameboard[4,4]);
         RemoveAvailable(availableFields, 4, 4);
         gameboard[4,4] = Instantiate(p1_tile, new Vector3(5.5f, 5.5f, -0.5f), Quaternion.identity);
@@ -81,7 +84,7 @@ public class GameController : MonoBehaviour
             currentPlayer = currentPlayer == Player.B ? Player.W : Player.B;
             PlayerChanged = true;
     }
-    
+
 
     private OthelloAgent GetCurrentAgent()
     {
@@ -183,4 +186,3 @@ public class GameController : MonoBehaviour
         return null;
     }
 }
-
