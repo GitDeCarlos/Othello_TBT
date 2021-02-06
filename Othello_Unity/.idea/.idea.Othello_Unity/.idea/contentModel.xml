@@ -12,9 +12,10 @@
           <e p="MainMenu.cs" t="Include" />
           <e p="OptionsMenu.cs" t="Include" />
           <e p="OthelloAgent.cs" t="Include" />
+          <e p="Piece.cs" t="Include" />
           <e p="SettingsController.cs" t="Include" />
           <e p="TextureController.cs" t="Include" />
-          <e p="TileFunctionality.cs" t="Include" />
+          <e p="Tile.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

@@ -29,7 +29,7 @@ public class GameController : MonoBehaviour
     void Start(){
 
         // Create prefab from textures
-
+        
         
         //Board is in [y,x] format
         Instantiate(board, new Vector3(5,5,0), Quaternion.identity);
