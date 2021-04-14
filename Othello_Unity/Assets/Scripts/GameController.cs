@@ -25,12 +25,28 @@ public class GameController : MonoBehaviour
     public Player currentPlayer;
     public Player player;
 
+    // UI related variables
+    public GameObject canvas;
+    public GameObject testPref;
+
     // Start is called before the first frame update
     void Start(){
 
         // Create prefab from textures
         
-        
+        // Instantiate board
+        GameObject[,] uiBoard = new GameObject[8,8];
+        for (int i = 0; i < 8; i++)
+        {
+            for (int j = 0; j < 8; j++)
+            {
+                uiBoard[i, j] = Instantiate(testPref, Vector3.zero, Quaternion.identity, canvas.transform);
+                uiBoard[i, j].transform.localPosition = new Vector3(64*i - 32 - 192, 64*j - 32 - 192);
+
+            }
+        }
+
+        /*
         //Board is in [y,x] format
         Instantiate(board, new Vector3(5,5,0), Quaternion.identity);
 
@@ -66,7 +82,7 @@ public class GameController : MonoBehaviour
 
         gameboard[2,2] = flip(gameboard[2,2]);
         RemoveAvailable(availableFields, 4, 3);
-        gameboard[4,3] = Instantiate(p2_tile, new Vector3(5.5f, 4.4f, -0.5f), Quaternion.identity);
+        gameboard[4,3] = Instantiate(p2_tile, new Vector3(5.5f, 4.4f, -0.5f), Quaternion.identity); */
     }
 
     // Update is called once per frame

@@ -902,6 +902,9 @@ MonoBehaviour:
   PlayerChanged: 1
   currentPlayer: 0
   player: 0
+  canvas: {fileID: 211354911}
+  testPref: {fileID: 1527617696657173126, guid: df399a07b9ba7af499897ebb00b0ffca,
+    type: 3}
 --- !u!4 &845883548
 Transform:
   m_ObjectHideFlags: 0
