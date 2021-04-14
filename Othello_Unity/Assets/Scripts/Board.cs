@@ -1,26 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Board : MonoBehaviour
 {
-    private Tile[,] grid;
-    private bool turn;
+    public GameObject[,] grid = new GameObject[8,8];
+    public GameObject tile;
 
-    private static int GSIZE = 8;
-    
-    public Board()
+    public void Start()
     {
-        this.grid = new Tile[GSIZE,GSIZE];
-
-        for (int i = 0; i < GSIZE; i++)
+        for (int i = 0; i < 8; i++)
         {
-            for (int j = 0; j < GSIZE; j++)
+            for (int j = 0; j < 8; j++)
             {
-                // Instantiate Tile(new Vector2(i, j)) @ position C(i, j);
+                grid[i, j] = Instantiate(tile, gameObject.transform);
+                grid[i, j].GetComponent<RectTransform>().anchoredPosition = new Vector3(64*i +32, -64*j -32, 0);
                 Debug.Log("New Tile: " + i + ", " + j);
             }
         }
-        
     }
+
 }
