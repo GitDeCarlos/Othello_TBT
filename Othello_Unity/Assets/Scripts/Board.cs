@@ -8,8 +8,15 @@ public class Board : MonoBehaviour
     public GameObject[,] grid = new GameObject[8,8];
     public GameObject tile;
 
+    private TextureController tc;
+    
     public void Start()
     {
+        tc = GameObject.Find("TexturePackController").GetComponent<TextureController>();
+
+        string FilePath = tc.getFilePath();
+        Sprite bg = tc.LoadNewSprite(FilePath); 
+        
         for (int i = 0; i < 8; i++)
         {
             for (int j = 0; j < 8; j++)

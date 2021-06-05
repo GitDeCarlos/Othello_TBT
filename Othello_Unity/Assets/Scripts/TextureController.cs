@@ -8,10 +8,9 @@ using System.IO;
 public class TextureController : MonoBehaviour
 {
     public string TexturePack;
-    private Sprite test = null;
-    public Sprite test2;
-
     public GameObject board_bg;
+
+    private String FilePath;
     
     private void Start()
     {
@@ -20,8 +19,7 @@ public class TextureController : MonoBehaviour
         
         TexturePack = settings.GetCurrentTexture();
         
-        string FilePath = "Assets/TexturePacks/" + TexturePack + "/bg.png";
-        test = Resources.Load<Sprite>(FilePath);
+        FilePath = "Assets/TexturePacks/" + TexturePack + "/bg.png";
 
         board_bg.GetComponent<Image>().sprite = LoadNewSprite(FilePath);
     }
@@ -50,5 +48,11 @@ public class TextureController : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public String getFilePath()
+    {
+        Debug.Log(FilePath);
+        return FilePath;
     }
 }
