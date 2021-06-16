@@ -14,14 +14,14 @@ public enum HeuristicMethod
 
 public class OthelloAgent : Agent
 {
-    public Player type;
+    //public Player type;
     public HeuristicMethod heuristicMethod;
     private GameController manager;
 
-    public override void OnEpisodeBegin()
-    {
-        type = GetComponent<BehaviorParameters>().TeamId == 0 ? Player.B : Player.W;
-    }
+    //public override void OnEpisodeBegin()
+    //{
+    //    type = GetComponent<BehaviorParameters>().TeamId == 0 ? Player.B : Player.W;
+    //}
 
     public override void Heuristic(float[] actionsOut)
     {

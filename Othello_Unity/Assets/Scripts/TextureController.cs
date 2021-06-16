@@ -12,16 +12,16 @@ public class TextureController : MonoBehaviour
 
     private String FilePath;
     
-    private void Start()
+    private void Awake()
     {
         GameObject settingsController = GameObject.Find("SettingsController");
         SettingsController settings = settingsController.GetComponent<SettingsController>();
         
         TexturePack = settings.GetCurrentTexture();
         
-        FilePath = "Assets/TexturePacks/" + TexturePack + "/bg.png";
+        FilePath = "Assets/TexturePacks/" + TexturePack;
 
-        board_bg.GetComponent<Image>().sprite = LoadNewSprite(FilePath);
+        board_bg.GetComponent<Image>().sprite = LoadNewSprite(FilePath + "/bg.png");
     }
 
     public Sprite LoadNewSprite(string FilePath, float PixelsPerUnit = 100.0f, SpriteMeshType spriteType = SpriteMeshType.Tight)

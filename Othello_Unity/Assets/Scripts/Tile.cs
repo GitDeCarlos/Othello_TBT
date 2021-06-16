@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,9 @@ public class Tile : MonoBehaviour
 {
     private Vector2 position;
     private Piece piece = null;
+
+    public GameObject GameManager;
+    public GameController Script;
     
     public Tile(Vector2 position)
     {
@@ -25,11 +29,16 @@ public class Tile : MonoBehaviour
     {
         return this.piece;
     }
+    
+    //
 
-    public void addPieceToTile(bool marker)
+    void Awake()
     {
-        // Instantiate piece @ C(this.position)
-        
-        // this.piece = instantiated piece.getComponent<Piece>;
+        Script = GameManager.GetComponent<GameController>();
+    }
+
+    private void OnMouseDown()
+    { Debug.Log("click");
+        Script.Place(this.gameObject);
     }
 }

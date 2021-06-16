@@ -27,10 +27,11 @@
       <option value="$PROJECT_DIR$/Assets/MainMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/OptionsMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Piece.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Board.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TextureController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OthelloAgent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mzuSmfLc9ci6bVGJ7DcxraulMr" />
@@ -93,7 +94,10 @@
       <workItem from="1612577604620" duration="3178000" />
       <workItem from="1618366842531" duration="3631000" />
       <workItem from="1618427669375" duration="3768000" />
-      <workItem from="1622861222489" duration="1753000" />
+      <workItem from="1622861222489" duration="2056000" />
+      <workItem from="1623549625654" duration="1933000" />
+      <workItem from="1623724373425" duration="398000" />
+      <workItem from="1623875130001" duration="2681000" />
     </task>
     <servers />
   </component>

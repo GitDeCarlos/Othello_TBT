@@ -2,11 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Player
-{
-    W,
-    B
-}
 public class GameController : MonoBehaviour
 {
     public GameObject p1_tile;
@@ -20,12 +15,22 @@ public class GameController : MonoBehaviour
     public OthelloAgent Agent2;
 
     public bool PlayerChanged = true;
-    public Player currentPlayer;
-    public Player player;
 
     // UI related variables
     public GameObject canvas;
     public GameObject board;
+
+    public enum Player
+    {
+        EMPTY,
+        WHITE,
+        BLACK
+    };
+
+    public Player Turn;
+
+    public GameObject p1;
+    public GameObject p2;
 
     // Start is called before the first frame update
     void Start(){
@@ -48,14 +53,7 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void ChangePlayer()
-    {
-            currentPlayer = currentPlayer == Player.B ? Player.W : Player.B;
-            PlayerChanged = true;
-    }
-
-
-    private OthelloAgent GetCurrentAgent()
+    /*private OthelloAgent GetCurrentAgent()
     {
         if (currentPlayer == Agent1.type) return Agent1;
         else return Agent2;
@@ -65,7 +63,7 @@ public class GameController : MonoBehaviour
     {
         if (Agent1.type == type) return Agent1;
         else return Agent2;
-    }
+    }*/
     private List<int> RemoveAvailable(List<int> available, int x, int y)
     {
         int count = 0;
@@ -153,5 +151,21 @@ public class GameController : MonoBehaviour
         }
         Debug.Log("Oopsie");
         return null;
+    }
+    
+    //
+
+    public void Place(GameObject tile)
+    {
+        if (Turn == Player.BLACK)
+        {
+            Instantiate(p1_tile, tile.transform.position, Quaternion.identity);
+            Turn = Player.WHITE;
+        }
+        else
+        {
+            Instantiate(p2_tile, tile.transform.position, Quaternion.identity);
+            Turn = Player.BLACK;
+        }
     }
 }
